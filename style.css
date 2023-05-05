@@ -12,7 +12,7 @@ body {
     border: 1px solid #ddd;
 }
 .page-container {
-
+margin-bottom: 70px;
 }
 .nav{
 
@@ -80,7 +80,7 @@ nav ul {
          flex-direction: column;
          align-items: center;
      }
-     nav ul{
+     nav ul {
          width: 100%;
          flex-direction: column;
          align-items: stretch;
@@ -157,8 +157,144 @@ background-color: #ff6363;
     background-color: #1eb21e;
 }
 
+.quote {
+    display: block;
+    background-color: #eeeeee;
+    padding: 50px;
+    text-align: center;
+    font-style: italic;
+}
+
+.quote::before{
+    display: inline-block;
+    content: open-quote;
+    color: green;
+    font-size: 32px;
+}
+.quote::after{
+    display: inline-block;
+    content: close-quote;
+    color: green;
+    font-size: 32px;
+}
+
+h3.title {
+    font-size: 24px;
+    padding: 12px;
+    margin: 6px;
+    border-top: 5px solid #ddd;
+    border-bottom: 5px solid #ddd;
+}
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    flex-basis: 325px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #d3d3d3;
+    border-radius: 10px;
+}
+
+.project h4 {
+    font-size: 20px;
+    padding: 12px;
+    margin: 6px;
+    border-top: 5px solid #ddd;
+    border-bottom: 5px solid #ddd;
+}
+
+.project p {
+    padding: 0px 12px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    transition: all 1.5s ease-in;
+}
+
+.project img:hover{
+    transform: scale(0.95);
+    opacity: 0.5;
+}
+
+.project button {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.project button:hover {
+    background-color: #45a049;
+}
+
+/* gallery */
+ .gallery{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-rows: repeat(3, 1fr);
+     grid-gap: 8px;
+     padding: 12px;
+ }
+
+ .gallery-item {
+     width: 100%;
+     height: 100%;
+     transition: all 0.30s ease-in;
+ }
+
+ .gallery-item:hover {
+     transform: scale(0.95);
+ }
+
+ .gallery-item img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+ .gallery-item-1 {
+     grid-column: 1/2;
+     grid-row: 1/2;
+ }
+
+ .gallery-item-2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.gallery-item-3 {
+    grid-column: 3/5;
+    grid-row: 1/3;
+}
+
+.gallery-item-4 {
+    grid-column: 1/3;
+    grid-row: 2/4;
+}
+
+.gallery-item-5 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.gallery-item-6 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
  .footer {
-     position: relative;
+     position: fixed;
      left: 0px;
      right: 0px;
      bottom: 0px;
