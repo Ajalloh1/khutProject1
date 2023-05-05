@@ -10,7 +10,57 @@ body {
     margin: 0px !important;
     background-color: white;
     border: 1px solid #ddd;
+}
+.page-container {
 
+}
+.nav{
 
+}
+nav {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav .logo{
+    display: flex;
+    align-items:center;
+}
+nav .logo img {
+    width: 56px;
+    height: 56px;
+    padding: 8px;
+    border-radius: 50%;
+}
 
+nav .logo .title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+}
+nav ul li {
+    color: white;
+    padding: 22px 40px;
+    background-color: #333333;
+}
+nav ul li:hover {
+    background-color: #222;
+}
+
+nav ul li.active {
+    background-color: #222;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
 }
