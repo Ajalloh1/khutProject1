@@ -53,6 +53,7 @@ nav ul li {
     padding: 22px 40px;
     background-color: #333333;
 }
+
 nav ul li:hover {
     background-color: #222;
 }
@@ -64,3 +65,106 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
+ /* tablet */
+ @media all and (max-width:800px){
+nav {
+    justify-content: flex-start;
+}
+nav ul {
+    justify-content:  space-between;
+}
+ }
+/* phone */
+ @media all and (max-width:600px){
+     nav {
+         flex-direction: column;
+         align-items: center;
+     }
+     nav ul{
+         width: 100%;
+         flex-direction: column;
+         align-items: stretch;
+     }
+     nav ul li {
+         text-align: center;
+     }
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 450px;
+    background-image: url(//unsplash.it/900/450/?blur);
+    background-size: cover;
+    background-color: #333333;
+    text-align: center;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0.0;
+        top: -100px;
+    }
+    to {
+        opacity: 1.0;
+        top: 0.0;
+
+    /* apply this on the banner heading */
+    }
+}
+
+
+.banner .heading {
+    flex: 1;
+    justify-self: center;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    position: relative;
+    animation: appear 1s ease-in-out 0s forwards;
+}
+
+.banner .heading small {
+    font-size: 24px;
+}
+
+.maintext {
+    font-size: 18px;
+    padding: 12px;
+}
+.subtext {
+    display: flex;
+}
+
+.subtext div {
+padding: 20px;
+margin: 10px;
+border-radius: 10px;
+color: white;
+}
+
+.subtext .red{
+background-color: #ff6363;
+}
+
+.subtext .yellow {
+    background-color: #f0a500;
+}
+
+.subtext .green {
+    background-color: #1eb21e;
+}
+
+ .footer {
+     position: relative;
+     left: 0px;
+     right: 0px;
+     bottom: 0px;
+     background-color: #222;
+     color: white;
+     text-align: center;
+     padding: 24px;
+ }
+
